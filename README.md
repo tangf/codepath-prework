@@ -5,7 +5,7 @@ My pre-work project for CodePath's IOS Mobile App Design Workshop
 
 ### App Walk-though
 
-<img src="https://recordit.co/e0ZkLX8cEr" width=200><br>
+<img src="http://g.recordit.co/e0ZkLX8cEr.gif" width=200><br>
 
 
 ### Required User Stories
