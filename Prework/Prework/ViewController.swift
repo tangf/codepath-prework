@@ -13,6 +13,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        // Show keyboard by default
+        //TextField.becomeFirstResponder()
+    }
 
     @IBOutlet weak var TextLabel: UILabel!
     @IBAction func ButtonClicked(_ sender: Any) {
@@ -20,14 +27,26 @@ class ViewController: UIViewController {
         TextLabel.textColor = UIColor.orange
     }
     
-    @IBAction func ButtonClicked3(_ sender: Any) {
-        TextLabel.text = "Goodbye"
-    }
-    
-    
     @IBOutlet var BackgroundView: UIView!
+    
     @IBAction func ButtonClicked2(_ sender: Any) {
         BackgroundView.backgroundColor = UIColor.cyan
     }
+    
+    
+    @IBOutlet weak var TextField: UITextField!
+   
+    @IBAction func ButtonClicked4(_ sender: Any) {
+        if(TextField.text != ""){
+            TextLabel.text = TextField.text
+            TextField.text = ""
+        }else{
+            TextLabel.text = "Goodbye"
+        }
+        //BackgroundView.endEditing(true)
+        //TextField.resignFirstResponder()
+    }
+    
+    
 }
 

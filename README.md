@@ -1,7 +1,7 @@
 ## Pre-work
 
 ### App Description
-My pre-work project for CodePath's IOS Mobile App Design Workshop
+My pre-work project for CodePath's Intro to Mobile App Development
 
 ### App Walk-though
 
